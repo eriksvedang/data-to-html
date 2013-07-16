@@ -1,6 +1,7 @@
 (ns data-to-html.core
   (require [hiccup.core :as h])
-  (require [hiccup.page :as p]))
+  (require [hiccup.page :as p])
+  (:gen-class))
 
 (def visit) ; pre-define symbol
 
