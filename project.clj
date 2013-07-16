@@ -1,4 +1,4 @@
-(defproject data-to-html "0.1.0"
+(defproject data-to-html "0.1.1"
   :description "Convert data to html"
   :url "https://github.com/eriksvedang/data-to-html"
   :license {:name "Eclipse Public License"
