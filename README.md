@@ -2,10 +2,10 @@
 
 A Clojure library for converting data structures into html and opening them in a browser for inspection.
 
-## Lein project
+## Lein project dependency
 
 ```clojure
-  [:dependencies [data-to-html "0.1.2"]]
+  [data-to-html "0.1.2"]
 ```
 
 ## Usage
