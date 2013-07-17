@@ -1,12 +1,11 @@
 (ns data-to-html.core
-  (require [data-to-html.css :refer [styles]])
-  (require [hiccup.core :as h])
-  (require [hiccup.page :as p])
+  (require [data-to-html.css :refer [styles]]
+           [hiccup.core :as h]
+           [hiccup.page :as p])
+  (import [java.awt.Desktop]
+          [java.net.URI]
+          [java.lang.System])
   (:gen-class))
-
-(import 'java.awt.Desktop)
-(import 'java.net.URI)
-(import 'java.lang.System)
 
 (def visit) ; pre-define symbol
 
