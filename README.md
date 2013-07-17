@@ -1,6 +1,6 @@
 # data-to-html
 
-A Clojure library for converting data structures into html and opening them in a browser for inspection.
+A Clojure library for converting data structures into html and opening them in a browser for inspection. It's very similar to clojure.inspector/inspect-tree but more readable to my eyes.
 
 ## Lein project dependency
 
