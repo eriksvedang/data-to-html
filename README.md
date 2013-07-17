@@ -4,17 +4,29 @@ A Clojure library for converting data structures into html and opening them in a
 
 ## Lein project
 
+```clojure
   [:dependencies [data-to-html "0.1.2"]]
+```
 
 ## Usage
 
+Import the project and its two functions
+
 ```clojure
-(ns stack-machine.core
+(ns weather.core
   (require [data-to-html.core :refer [convert open-in-browser]]))
+````
 
+Define some data
+
+```clojure
 (def my-data {:temperature 27 :forecast #{:cloudy :rain :thunder}})
+```
 
-(-> program-1
+Run the data through *convert* to turn it into a html string. Use open-in-browser to save the string into a html page and make your OS open it in a browser.
+
+```clojure
+(-> my-data
     convert
     open-in-browser)
 ```
