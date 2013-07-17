@@ -5,7 +5,7 @@ A Clojure library for converting data structures into html and opening them in a
 ## Lein project dependency
 
 ```clojure
-  [data-to-html "0.1.2"]
+[data-to-html "0.1.2"]
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ Define some data
 (def my-data {:temperature 27 :forecast #{:cloudy :rain :thunder}})
 ```
 
-Run the data through *convert* to turn it into a html string. Use open-in-browser to save the string into a html page and make your OS open it in a browser.
+Run the data through *convert* to turn it into a html string. Use *open-in-browser* to save the string into a html page and make your OS open it in a browser.
 
 ```clojure
 (-> my-data
