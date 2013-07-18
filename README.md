@@ -51,9 +51,8 @@ You can also use *inspect* to do it all in one go
 
 ## Todo
 
-* Helper function for doing it all
 * Use tree walk instead
-* Add foldable nodes to the tree
+* Add foldable nodes to the tree (jquery)
 * Make sure lazy seqs and symbols work properly
 
 ## License
