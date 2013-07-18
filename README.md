@@ -7,7 +7,7 @@ A Clojure library for converting data structures into html and opening them in a
 ## Installation
 
 ```clojure
-[data-to-html "0.1.2"]
+[data-to-html "0.1.3-SNAPSHOT"]
 ```
 
 ## Usage
