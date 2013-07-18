@@ -2,7 +2,7 @@
 
 A Clojure library for converting data structures into html and opening them in a browser for inspection. It's very similar to clojure.inspector/inspect-tree but more readable to my eyes.
 
-## Lein project dependency
+## Installation
 
 ```clojure
 [data-to-html "0.1.2"]
@@ -30,6 +30,15 @@ Run the data through *convert* to turn it into a html string. Use *open-in-brows
     convert
     open-in-browser)
 ```
+
+## Todo
+
+* Generate docs from comments
+* Helper function for doing it all
+* Better css code
+* Use tree walk instead
+* Add foldable nodes to the tree
+* Make sure lazy seqs and symbols work properly
 
 ## License
 
