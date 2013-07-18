@@ -16,7 +16,7 @@ Import the project and its two functions
 
 ```clojure
 (ns weather.core
-  (require [data-to-html.core :refer [convert open-in-browser]]))
+  (require [data-to-html.core :refer [convert open-in-browser inspect]]))
 ````
 
 Define some data
