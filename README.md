@@ -36,7 +36,7 @@ Run the data through *convert* to turn it into a html string. Use *open-in-brows
 You can also use *inspect* to do it all in one go
 
 ```clojure
-(inspect [10.2 13.1 5.7])
+(inspect my-data)
 ````
 
 *inspect* also returns the data again so that you can insert it in the middle of a threading macro
