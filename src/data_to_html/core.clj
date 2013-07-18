@@ -38,7 +38,7 @@
   (java.lang.System/getProperty "user.dir"))
 
 (defn open-in-browser
-  "Creates a file and opens it with a browser for your pleasurable viewing."
+  "Saves a html string as a file and opens it with your default web browser."
   ([html]
     (open-in-browser html "output.html"))
   ([html filename]
