@@ -1,5 +1,5 @@
 (ns data-to-html.core
-  (require [data-to-html.css :refer [styles]]
+  (require [data-to-html.css :as css]
            [hiccup.core :as h]
            [hiccup.page :as p])
   (import [java.awt.Desktop]
@@ -30,11 +30,11 @@
   "Converts a clojure data structure to a html string with nested divs and some css."
   (h/html
    (p/html5
-    [:head [:style styles]]
+    [:head [:style (css/get-css)]]
     [:body (visit data)])))
 
 (defn- pwd []
-  (System/getProperty "user.dir"))
+  (java.lang.System/getProperty "user.dir"))
 
 (defn open-in-browser
   "Creates a file and opens it with a browser for your pleasurable viewing."
@@ -42,5 +42,5 @@
     (open-in-browser html "output.html"))
   ([html filename]
     (spit filename html)
-    (doto (Desktop/getDesktop)
-      (.browse (URI. (str "file://" (pwd) "/" filename))))))
+    (doto (java.awt.Desktop/getDesktop)
+      (.browse (java.net.URI. (str "file://" (pwd) "/" filename))))))
