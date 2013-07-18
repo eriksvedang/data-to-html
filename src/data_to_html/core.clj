@@ -26,8 +26,9 @@
         (nil? node) [:div.type "nil"]
         :else [:div.type (str node)]))
 
-(defn convert [data]
+(defn convert
   "Converts a clojure data structure to a html string with nested divs and some css."
+  [data]
   (h/html
    (p/html5
     [:head [:style (css/get-css)]]

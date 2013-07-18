@@ -33,9 +33,7 @@ Run the data through *convert* to turn it into a html string. Use *open-in-brows
 
 ## Todo
 
-* Generate docs from comments
 * Helper function for doing it all
-* Better css code
 * Use tree walk instead
 * Add foldable nodes to the tree
 * Make sure lazy seqs and symbols work properly
