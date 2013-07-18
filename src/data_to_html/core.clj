@@ -45,3 +45,11 @@
     (spit filename html)
     (doto (java.awt.Desktop/getDesktop)
       (.browse (java.net.URI. (str "file://" (pwd) "/" filename))))))
+
+(defn inspect
+  "Takes a data structure, displays it as a webpage in a browser and then returns the data structure again."
+  [data]
+  (-> data
+      convert
+      open-in-browser)
+  data)

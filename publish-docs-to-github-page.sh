@@ -1,0 +1,1 @@
+cp -R ./docs/ ~/Sites/eriksvedang.github.com/data-to-html/
