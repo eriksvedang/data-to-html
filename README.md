@@ -33,7 +33,7 @@ Run the data through *convert* to turn it into a html string. Use *open-in-brows
     open-in-browser)
 ```
 
-You can also use *inspect* to do it all in one go
+You can also use *inspect* to do it all in one function call
 
 ```clojure
 (inspect my-data)
