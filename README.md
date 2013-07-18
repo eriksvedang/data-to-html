@@ -2,6 +2,8 @@
 
 A Clojure library for converting data structures into html and opening them in a browser for inspection. It's very similar to clojure.inspector/inspect-tree but more readable to my eyes.
 
+[API documentation](http://eriksvedang.github.io/data-to-html/)
+
 ## Installation
 
 ```clojure

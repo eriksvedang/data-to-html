@@ -6,4 +6,6 @@
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [hiccup "1.0.3"]
                  [garden "0.1.0-beta6"]]
-  :codox {:output-dir "docs"})
+  :codox {:output-dir "docs"
+          :src-dir-uri "http://github.com/eriksvedang/data-to-html/tree/master/"
+          :src-linenum-anchor-prefix "L"})
