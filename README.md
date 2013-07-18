@@ -39,7 +39,7 @@ You can also use *inspect* to do it all in one go
 (inspect [10.2 13.1 5.7])
 ````
 
-This also returns the data again so that you can insert it in the middle of a threading macro
+*inspect* also returns the data again so that you can insert it in the middle of a threading macro
 
 ```clojure
 (-> my-data
