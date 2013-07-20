@@ -1,6 +1,6 @@
 (ns data-to-html.css
-  (require [garden.core :refer [css]]
-           [garden.units :refer [px]]))
+  (:require [garden.core :refer [css]]
+            [garden.units :refer [px]]))
 
 (def min-size {:min-width (px 20) :min-height (px 20)})
 

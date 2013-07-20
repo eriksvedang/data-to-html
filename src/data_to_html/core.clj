@@ -1,10 +1,10 @@
 (ns data-to-html.core
-  (require [data-to-html.css :as css]
-           [hiccup.core :as h]
-           [hiccup.page :as p])
-  (import [java.awt.Desktop]
-          [java.net.URI]
-          [java.lang.System])
+  (:require [data-to-html.css :as css]
+            [hiccup.core :as h]
+            [hiccup.page :as p])
+  (:import [java.awt.Desktop]
+           [java.net.URI]
+           [java.lang.System])
   (:gen-class))
 
 (def visit) ; pre-define symbol
@@ -40,11 +40,11 @@
 (defn open-in-browser
   "Saves a html string as a file and opens it with your default web browser."
   ([html]
-    (open-in-browser html "output.html"))
+   (open-in-browser html "output.html"))
   ([html filename]
-    (spit filename html)
-    (doto (java.awt.Desktop/getDesktop)
-      (.browse (java.net.URI. (str "file://" (pwd) "/" filename))))))
+   (spit filename html)
+   (doto (java.awt.Desktop/getDesktop)
+     (.browse (java.net.URI. (str "file://" (pwd) "/" filename))))))
 
 (defn inspect
   "Takes a data structure, displays it as a webpage in a browser and then returns the data structure again."
