@@ -2,7 +2,9 @@
   (:require [garden.core :refer [css]]
             [garden.units :refer [px]]))
 
-(def min-size {:min-width (px 20) :min-height (px 20)})
+(def min-size
+  "The minimum size of the divs displaying data structures."
+  {:min-width (px 20) :min-height (px 20)})
 
 (def ^:dynamic *colors*
   "Rebind this var to change the color of different elements."
