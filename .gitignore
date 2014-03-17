@@ -15,3 +15,5 @@ output.html
 .floo
 .flooignore
 .sublime-project
+.idea
+*.iml
