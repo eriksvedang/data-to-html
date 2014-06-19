@@ -6,6 +6,8 @@ A Clojure library for converting data structures into html and opening them in a
 
 ## Installation
 
+[![Clojars Project](http://clojars.org/data-to-html/latest-version.svg)](http://clojars.org/data-to-html)
+
 ```clojure
 [data-to-html "0.1.3-SNAPSHOT"]
 ```
