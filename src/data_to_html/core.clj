@@ -2,9 +2,9 @@
   (:require [data-to-html.css :as css]
             [hiccup.core :as h]
             [hiccup.page :as p])
-  (:import [java.awt.Desktop]
-           [java.net.URI]
-           [java.lang.System])
+  (:import java.awt.Desktop
+           java.net.URI
+           java.lang.System)
   (:gen-class))
 
 (def visit) ; pre-define symbol so that it can be used in visit-vector and visit-map-pair
@@ -48,6 +48,10 @@
   []
   (java.lang.System/getProperty "user.dir"))
 
+
+;; If you get java.awt.AWTError: Assistive Technology not found: org.GNOME.Accessibility.AtkWrapper
+;; then run `sudoedit /etc/java-8-openjdk/accessibility.properties` and remove the following line:
+;; `assistive_technologies=org.GNOME.Accessibility.AtkWrapper`
 (defn open-in-browser
   "Saves a html string as a file and opens it with your default web browser."
   ([html]
